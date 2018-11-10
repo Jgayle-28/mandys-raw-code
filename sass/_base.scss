@@ -1,17 +1,17 @@
 // COLOR VARIABLES
-$color-primary: #71CAB0;
+$color-primary: #71cab0;
 $color-primary-dark: #805278;
 
-$color-secondary: #F29EBA;
-$color-secondary-dark: #EA8BB1;
+$color-secondary: #f29eba;
+$color-secondary-dark: #ea8bb1;
 
-$color-secondary-2: #B684AC;
+$color-secondary-2: #b684ac;
 $color-secondary-2-dark: #805278;
 
-$grey: #9B9B9B;
+$grey: #9b9b9b;
 $grey-2: #aaa;
 
-$black: #212121;
+$black: #191919;
 
 $white: #fff;
 $white2: #fefefe;
@@ -39,7 +39,6 @@ $font-display: 'Josefin Sans', sans-serif;
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 10px / 16px = 62.5% -> 10px
-
 }
 
 body {
@@ -51,7 +50,8 @@ body {
   background-color: $white2;
 }
 
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }

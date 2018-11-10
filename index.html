@@ -1,416 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cedarville+Cursive"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Zeyada"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Zeyada" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <!-- FONT AWESOME -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/aos.css" />
 
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
-  <!-- MAIN CSS -->
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/aos.css">
+    <title>Mandys Sweet Cakes</title>
+  </head>
 
+  <body class="container">
+    <!-- HEADER -->
+    <header class="header" id="home">
+      <!-- NAVIGATION -->
+      <nav class="nav">
+        <input type="checkbox" id="nav" class="hidden" />
+        <!-- Nav Button -->
+        <label for="nav" class="nav-btn"> <i></i> <i></i> <i></i> </label>
 
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="#">
+            <img
+              src="img/logo.svg"
+              alt="Mandys Sweet Cake logo"
+              class="logo-img"
+            />
+          </a>
+        </div>
 
-  <title>Mandys Sweet Cakes</title>
-</head>
+        <!-- Nav Links -->
+        <div class="nav-wrapper">
+          <ul>
+            <li><a href="#home" class="scroll">Home</a></li>
+            <li><a href="#services" class="scroll">Services</a></li>
+            <li><a href="#menu" class="scroll">Sweets</a></li>
+            <li><a href="#about" class="scroll">about</a></li>
+            <li><a href="#gallery" class="scroll">Gallery</a></li>
+            <li><a href="#contact" class="scroll">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
 
-<body class="container">
-  <!-- HEADER -->
-  <header class="header">
-    <!-- NAVIGATION -->
-    <nav id="nav" class="nav">
+      <!-- SLIDER START -->
+      <div class="slider-wrapper">
+        <!-- INPUTS FOR PAGINATION -->
+        <input
+          type="radio"
+          name="slider"
+          class="slide-radio1"
+          checked
+          id="slider_1"
+        />
+        <input type="radio" name="slider" class="slide-radio2" id="slider_2" />
+        <input type="radio" name="slider" class="slide-radio3" id="slider_3" />
+        <input type="radio" name="slider" class="slide-radio4" id="slider_4" />
 
-      <!-- HAMBURGER MENU -->
-      <button class="menu">
-        <em class="hamburger"></em>
-      </button>
+        <!-- SLIDER-PAGINATION -->
+        <div class="slider-pagination">
+          <label for="slider_1" class="page1"></label>
+          <label for="slider_2" class="page2"></label>
+          <label for="slider_3" class="page3"></label>
+          <label for="slider_4" class="page4"></label>
+        </div>
 
-      <!-- LOGO -->
-      <div class="brand">
-        <a href="#"><img class="brand-img" src="img/logo.svg" alt="Mandys Bakery" /></a>
-      </div>
+        <!-- SLIDER #1 -->
+        <div class="slider slide-1">
+          <img src="img/slides/cookies.png" alt="" />
+          <div class="slider-content">
+            <h4>AWESOME CUPCAKE</h4>
+            <h2>Super tastey Make you wanna eat all day</h2>
+            <button type="button" class="slider-btn" name="button">
+              See them all!
+            </button>
+          </div>
+        </div>
 
-      <!-- NAVBAR / LINKS -->
-      <ul class="navbar">
-        <li>
-          <a href="#home" class="scroll">Home</a>
-        </li>
-        <li>
-          <a href="#services" class="scroll">Services</a>
-        </li>
-        <li>
-          <a href="#menu" class="scroll">Menu</a>
-        </li>
-        <li>
-          <a href="#about" class="scroll">About</a>
-        </li>
-        <li>
-          <a href="#gallery" class="scroll">Gallery</a>
-        </li>
-        <li>
-          <a href="#contact" class="scroll">Contact</a>
-        </li>
-      </ul>
-    </nav>
+        <!-- SLIDER #2 -->
+        <div class="slider slide-2">
+          <img src="img/slides/choc-cupcakes.png" alt="" />
 
-    <!-- SLIDER START -->
-    <div class="slider-wrapper">
-      <!-- INPUTS FOR PAGINATION -->
-      <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
-      <input type="radio" name="slider" class="slide-radio2" id="slider_2">
-      <input type="radio" name="slider" class="slide-radio3" id="slider_3">
-      <input type="radio" name="slider" class="slide-radio4" id="slider_4">
+          <div class="slider-content">
+            <h4>AWESOME CHEESECAKE</h4>
+            <h2>You know you wanna eat all day</h2>
+            <button type="button" class="slider-btn" name="button">
+              See them all!
+            </button>
+          </div>
+        </div>
 
-      <!-- SLIDER-PAGINATION -->
-      <div class="slider-pagination">
-        <label for="slider_1" class="page1"></label>
-        <label for="slider_2" class="page2"></label>
-        <label for="slider_3" class="page3"></label>
-        <label for="slider_4" class="page4"></label>
-      </div>
+        <!-- SLIDER #3 -->
+        <div class="slider slide-3">
+          <img src="img/slides/choc-pie.png" alt="" />
+          <div class="slider-content">
+            <h4>AWESOME CHOCOLATE PIE</h4>
+            <h2>Ok your gonna eat all day</h2>
+            <button type="button" class="slider-btn" name="button">
+              See them all!
+            </button>
+          </div>
+        </div>
 
-      <!-- SLIDER #1 -->
-      <div class="slider slide-1">
-        <img src="img/rose-ccake.png" alt="">
-        <div class="slider-content">
-          <h4>AWESOME CUPCAKE</h4>
-          <h2>Super tastey Make you wanna eat all day</h2>
-          <button type="button" class="slider-btn" name="button">See them all!</button>
+        <!-- SLIDER #4 -->
+        <div class="slider slide-4">
+          <img src="img/slides/choc-roll.png" alt="" />
+          <div class="slider-content">
+            <h4>AWESOME CUPCAKE 4</h4>
+            <h2>I really did eat all day</h2>
+            <button type="button" class="slider-btn" name="button">
+              See them all!
+            </button>
+          </div>
         </div>
       </div>
+    </header>
 
-      <!-- SLIDER #2 -->
-      <div class="slider slide-2">
-        <img src="img/strawc.png" alt="">
-        <div class="slider-content">
-          <h4>AWESOME CHEESECAKE</h4>
-          <h2>You know you wanna eat all day</h2>
-          <button type="button" class="slider-btn" name="button">See them all!</button>
-        </div>
-      </div>
-
-      <!-- SLIDER #3 -->
-      <div class="slider slide-3">
-        <img src="img/choc-pie.png" alt="">
-        <div class="slider-content">
-          <h4>AWESOME CHOCOLATE PIE</h4>
-          <h2>Ok your gonna eat all day</h2>
-          <button type="button" class="slider-btn" name="button">See them all!</button>
-        </div>
-      </div>
-
-      <!-- SLIDER #4 -->
-      <div class="slider slide-4">
-        <img src="img/choc-roll.png" alt="">
-        <div class="slider-content">
-          <h4>AWESOME CUPCAKE 4</h4>
-          <h2>I really did eat all day</h2>
-          <button type="button" class="slider-btn" name="button">See them all!</button>
-        </div>
-      </div>
-
-    </div>
-
-  </header>
-
-  <!-- SERVICES -->
-  <section class="services" id="services">
-    <!-- HEADING -->
-    <h1 class="serv-head"><img src="img/serv-banner.svg" alt="Our Services"></h1>
-    <div class="serv-wrap">
-
-      <!-- SERVICE BOX  / CATERING-->
-      <div class="serv-box serv-box-catering" data-aos="fade-right" data-aos-duration="1500">
-        <div class="serv-box-head-1">
-          <img src="img/cat-ban.svg" alt="">
-
-        </div>
-        <!-- CONTENT -->
-        <div class="serv-box-content ">
-          <div class="serv-box-content-overlay serv-box-content-overlay-1">
-            <div class="serv-box-content-overlay-content serv-box-content-overlay-1-content-1">
-              <h3>Got an upcoming event? We'll cater it!</h3>
-              <br>
-              <p>Mandys can caters for corporate affairs, weddings, anniversaries, birthdays, dessert buffets, baby
-                showers, bridal showers and more! We also rent out our bistro for special events. Call us at
-                777-777-7777 for a quote!</p>
-              <br>
-              <h3>We make lunch stops! Bring the Mandys trailer to your event!</h3>
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <!-- HEADING -->
+      <h1 class="serv-head">
+        <img src="img/services/serv-banner.svg" alt="Our Services" />
+      </h1>
+      <div class="serv-wrap">
+        <!-- SERVICE BOX  / CATERING -->
+        <div
+          class="serv-box serv-box-catering"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
+          <div class="serv-box-head-1">
+            <img src="img/services/cat-ban.svg" alt="" />
+          </div>
+          <!-- CONTENT -->
+          <div class="serv-box-content ">
+            <div class="serv-box-content-overlay serv-box-content-overlay-1">
+              <div
+                class="serv-box-content-overlay-content serv-box-content-overlay-1-content-1"
+              >
+                <h3>Got an upcoming event? We'll cater it!</h3>
+                <br />
+                <p>
+                  Mandys can caters for corporate affairs, weddings,
+                  anniversaries, birthdays, dessert buffets, baby showers,
+                  bridal showers and more! We also rent out our bistro for
+                  special events. Call us at 777-777-7777 for a quote!
+                </p>
+                <br />
+                <h3>
+                  We make lunch stops! Bring the Mandys trailer to your event!
+                </h3>
+              </div>
+            </div>
+            <div class="bot-content">
+              <img
+                class="bot-content-cat-img"
+                src="img/services/Catering.svg"
+                alt=""
+              />
+              <a class="serv-box-content-btn serv-box-content-btn-1"
+                >More info</a
+              >
             </div>
           </div>
-          <div class="bot-content">
-            <img class="bot-content-cat-img" src="img/Catering.svg" alt="">
-            <a class="serv-box-content-btn serv-box-content-btn-1">More info</a>
+        </div>
+
+        <!-- SERVICE BOX  / SHOP -->
+        <div
+          class="serv-box serv-box-shop"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+        >
+          <div class="serv-box-head-2">
+            <img src="img/services/shop-ban.svg" alt="" />
           </div>
-        </div>
-
-      </div>
-
-      <!-- SERVICE BOX  / SHOP-->
-      <div class="serv-box serv-box-shop" data-aos="zoom-in" data-aos-duration="1500">
-        <div class="serv-box-head-2">
-          <img src="img/shop-ban.svg" alt="">
-        </div>
-        <!-- CONTENT -->
-        <div class="serv-box-content">
-          <div class="serv-box-content-overlay serv-box-content-overlay-2">
-            <div class="serv-box-content-overlay-content serv-box-content-overlay-2-content-2">
-              <h3>Have a sweet tooth?</h3>
-              <br>
-              <p>Stop by our shop for one of our tastey treats made daily & grab a fresh cup our specialty coffee while
-                your here.</p>
-              <br>
-              <h3>Well see you there</h3>
+          <!-- CONTENT -->
+          <div class="serv-box-content">
+            <div class="serv-box-content-overlay serv-box-content-overlay-2">
+              <div
+                class="serv-box-content-overlay-content serv-box-content-overlay-2-content-2"
+              >
+                <h3>Have a sweet tooth?</h3>
+                <br />
+                <p>
+                  Stop by our shop for one of our tastey treats made daily &
+                  grab a fresh cup our specialty coffee while your here.
+                </p>
+                <br />
+                <h3>Well see you there</h3>
+              </div>
+            </div>
+            <div class="bot-content">
+              <img
+                class="bot-content-shop-img"
+                src="img/services/Shop.svg"
+                alt=""
+              />
+              <a class="serv-box-content-btn serv-box-content-btn-2"
+                >More info</a
+              >
             </div>
           </div>
-          <div class="bot-content">
-            <img class="bot-content-shop-img" src="img/Shop.svg" alt="">
-            <a class="serv-box-content-btn serv-box-content-btn-2">More info</a>
-          </div>
         </div>
-      </div>
 
-      <!-- SERVICE BOX / CLASSES-->
-      <div class="serv-box serv-box-classes" data-aos="fade-left" data-aos-duration="1500">
-        <div class="serv-box-head-3">
-          <img src="img/class-ban.svg" alt="">
-        </div>
-        <!-- CONTENT -->
-        <div class="serv-box-content">
-          <div class="serv-box-content-overlay serv-box-content-overlay-3">
-            <div class="serv-box-content-overlay-content serv-box-content-overlay-3-content-3">
-              <h3>We offer nothing but the best!</h3>
-              <br>
-              <p>Whether your looking for a fun activity for the kids or an excellent idea for a date, come take one of
-                our classes.</p>
-              <br>
-              <h3>Contact us for more information.</h3>
+        <!-- SERVICE BOX / CLASSES -->
+        <div
+          class="serv-box serv-box-classes"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
+          <div class="serv-box-head-3">
+            <img src="img/services/class-ban.svg" alt="" />
+          </div>
+          <!-- CONTENT -->
+          <div class="serv-box-content">
+            <div class="serv-box-content-overlay serv-box-content-overlay-3">
+              <div
+                class="serv-box-content-overlay-content serv-box-content-overlay-3-content-3"
+              >
+                <h3>We offer nothing but the best!</h3>
+                <br />
+                <p>
+                  Whether your looking for a fun activity for the kids or an
+                  excellent idea for a date, come take one of our classes.
+                </p>
+                <br />
+                <h3>Contact us for more information.</h3>
+              </div>
+            </div>
+            <div class="bot-content">
+              <img
+                class="bot-content-class-img"
+                src="img/services/Classes.svg"
+                alt=""
+              />
+              <a class="serv-box-content-btn serv-box-content-btn-3"
+                >More info</a
+              >
             </div>
           </div>
-          <div class="bot-content">
-            <img class="bot-content-class-img" src="img/Classes.svg" alt="">
-            <a class="serv-box-content-btn serv-box-content-btn-3">More info</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu-items" id="menu">
+      <!-- HEADING -->
+      <div class="head-wrap">
+        <div class="head-wrap-inner">
+          <img src="img/menu/menu-banner1.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="menu-wrap">
+        <!-- CUP CAKES -->
+        <div class="menu-box">
+          <div
+            class="menu-item menu-item-cupcake"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+          ></div>
+          <div
+            class="menu-item-text"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
+            <div class="menu-item-text-wrapper">
+              <h3 class="menu-item-text-head">Cup cakes</h3>
+              <p class="menu-item-text-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                nostrum expedita, ipsa, deleniti aliquam nam quo nemo rem
+                consequatur sint beatae adipisci doloribus veniam ad!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHEESE CAKES -->
+        <div class="menu-box">
+          <div
+            class="menu-item menu-item-cheesecake "
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          ></div>
+          <div
+            class="menu-item-text menu-item-text-left"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+          >
+            <div class="menu-item-text-wrapper">
+              <h3 class="menu-item-text-head">Cheesecakes</h3>
+              <p class="menu-item-text-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                nostrum expedita, ipsa, deleniti aliquam nam quo nemo rem
+                consequatur sint beatae adipisci doloribus veniam ad!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SCONES -->
+        <div class="menu-box">
+          <div
+            class="menu-item menu-item-scone"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+          ></div>
+          <div
+            class="menu-item-text"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
+            <div class="menu-item-text-wrapper">
+              <h3 class="menu-item-text-head">Scones</h3>
+              <p class="menu-item-text-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                nostrum expedita, ipsa, deleniti aliquam nam quo nemo rem
+                consequatur sint beatae adipisci doloribus veniam ad!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROLLS -->
+        <div class="menu-box">
+          <div
+            class="menu-item menu-item-p-roll"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          ></div>
+          <div
+            class="menu-item-text menu-item-text-left"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+          >
+            <div class="menu-item-text-wrapper">
+              <h3 class="menu-item-text-head">Rolls</h3>
+              <p class="menu-item-text-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                nostrum expedita, ipsa, deleniti aliquam nam quo nemo rem
+                consequatur sint beatae adipisci doloribus veniam ad!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- COOKIES -->
+        <div class="menu-box">
+          <div
+            class="menu-item menu-item-cookie"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+          ></div>
+          <div
+            class="menu-item-text"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
+            <div class="menu-item-text-wrapper">
+              <h3 class="menu-item-text-head">Cookies</h3>
+              <p class="menu-item-text-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                nostrum expedita, ipsa, deleniti aliquam nam quo nemo rem
+                consequatur sint beatae adipisci doloribus veniam ad!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PIES -->
+        <div class="menu-box">
+          <div
+            class="menu-item menu-item-pie"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          ></div>
+          <div
+            class="menu-item-text menu-item-text-left"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+          >
+            <div class="menu-item-text-wrapper">
+              <h3 class="menu-item-text-head">Pies</h3>
+              <p class="menu-item-text-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                nostrum expedita, ipsa, deleniti aliquam nam quo nemo rem
+                consequatur sint beatae adipisci doloribus veniam ad!
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-
-  <!-- MENU -->
-  <section class="menu-items" id="menu">
-    <!-- HEADING -->
-    <div class="head-wrap">
-      <div class="head-wrap-inner">
-        <img src="img/menu-banner1.svg" alt="">
+    <!-- GALLERY -->
+    <section class="gallery" id="gallery">
+      <div class="gal-head">
+        <img src="img/gallery/recent-banner.svg" alt="" />
       </div>
-    </div>
 
-    <div class="menu-wrap">
-      <!-- CUP CAKES  -->
-      <div class="menu-box">
-        <div class="menu-item menu-item-cupcake" data-aos="fade-left" data-aos-duration="1200"></div>
-        <div class="menu-item-text" data-aos="fade-right" data-aos-duration="1200">
-          <div class="menu-item-text-wrapper">
-            <h3 class="menu-item-text-head">Cup cakes</h3>
-            <p class="menu-item-text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nostrum
-              expedita, ipsa, deleniti aliquam nam quo nemo rem consequatur sint beatae adipisci doloribus veniam ad!</p>
+      <div class="wrapper">
+        <div class="item">
+          <div class="polaroid">
+            <img src="img/gallery/gal-2.png" />
+            <div class="caption">Cupcakes for girl scouts</div>
           </div>
         </div>
 
-      </div>
+        <div class="item">
+          <div class="polaroid">
+            <img src="img/gallery/gal-1.png" />
+            <div class="caption">Modern / Vintage wedding cake</div>
+          </div>
+        </div>
 
-      <!-- CHEESE CAKES  -->
-      <div class="menu-box">
-        <div class="menu-item menu-item-cheesecake " data-aos="fade-right" data-aos-duration="1200"></div>
-        <div class="menu-item-text menu-item-text-left" data-aos="fade-left" data-aos-duration="1200">
-          <div class="menu-item-text-wrapper">
-            <h3 class="menu-item-text-head">Cheesecakes</h3>
-            <p class="menu-item-text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nostrum
-              expedita, ipsa, deleniti aliquam nam quo nemo rem consequatur sint beatae adipisci doloribus veniam ad!</p>
+        <div class="item">
+          <div class="polaroid">
+            <img src="img/gallery/gal-3.png" />
+            <div class="caption">Winning cupcake war design</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="polaroid">
+            <img src="img/gallery/gal-4.png" />
+            <div class="caption">Double dark chocolate fudge cake</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="polaroid">
+            <img src="img/gallery/gal-5.png" />
+            <div class="caption">Ooey Gooey cinamon roll</div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- SCONES -->
-      <div class="menu-box">
-        <div class="menu-item menu-item-scone" data-aos="fade-left" data-aos-duration="1200"></div>
-        <div class="menu-item-text" data-aos="fade-right" data-aos-duration="1200">
-          <div class="menu-item-text-wrapper">
-            <h3 class="menu-item-text-head">Scones</h3>
-            <p class="menu-item-text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nostrum
-              expedita, ipsa, deleniti aliquam nam quo nemo rem consequatur sint beatae adipisci doloribus veniam ad!</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- ROLLS -->
-      <div class="menu-box">
-        <div class="menu-item menu-item-p-roll" data-aos="fade-right" data-aos-duration="1200"></div>
-        <div class="menu-item-text menu-item-text-left" data-aos="fade-left" data-aos-duration="1200">
-          <div class="menu-item-text-wrapper">
-            <h3 class="menu-item-text-head">Rolls</h3>
-            <p class="menu-item-text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nostrum
-              expedita, ipsa, deleniti aliquam nam quo nemo rem consequatur sint beatae adipisci doloribus veniam ad!</p>
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <!-- BANNER -->
+      <div class="about-banner" data-aos="fade-right" data-aos-duration="1500">
+        <div class="about-banner-wrap">
+          <div class="about-banner-wrap-inner">
+            <img src="img/about/about-banner1.svg" alt="" />
           </div>
         </div>
       </div>
 
-      <!-- COOKIES -->
-      <div class="menu-box">
-        <div class="menu-item menu-item-cookie" data-aos="fade-left" data-aos-duration="1200"></div>
-        <div class="menu-item-text" data-aos="fade-right" data-aos-duration="1200">
-          <div class="menu-item-text-wrapper">
-            <h3 class="menu-item-text-head">Cookies</h3>
-            <p class="menu-item-text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nostrum
-              expedita, ipsa, deleniti aliquam nam quo nemo rem consequatur sint beatae adipisci doloribus veniam ad!</p>
+      <!-- ABOUT PARAGRAPH -->
+      <div
+        class="about-p"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="1500"
+      >
+        <div class="about-p-wrap">
+          <div class="about-p-wrap-inner">
+            <h3>At Mandys</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Assumenda repudiandae tenetur facilis nobis saepe nemo id
+              molestiae exercitationem autem, nostrum magni doloremque adipisci
+              deleniti magnam similique a perspiciatis. Nesciunt, maiores.
+            </p>
+          </div>
+
+          <div class="about-p-wrap-pix">
+            <img
+              class="about-p-wrap-pix-img1"
+              src="img/about/about-pic-2.png"
+              alt=""
+            />
+            <img
+              class="about-p-wrap-pix-img2"
+              src="img/about/about-pic-1.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- PIES -->
-      <div class="menu-box">
-        <div class="menu-item menu-item-pie" data-aos="fade-right" data-aos-duration="1200"></div>
-        <div class="menu-item-text menu-item-text-left" data-aos="fade-left" data-aos-duration="1200">
-          <div class="menu-item-text-wrapper">
-            <h3 class="menu-item-text-head">Pies</h3>
-            <p class="menu-item-text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nostrum
-              expedita, ipsa, deleniti aliquam nam quo nemo rem consequatur sint beatae adipisci doloribus veniam ad!</p>
-          </div>
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div
+        class="contact-wrap"
+        data-aos="fade-down"
+        data-aos-delay="600"
+        data-aos-duration="1000"
+      >
+        <img class="" src="img/contact/contact-pin.svg" alt="" />
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-wrap">
+        <div class="social">
+          <h3>Connect with us</h3>
+
+          <!-- INSTAGRAM -->
+          <a href="https://www.instagram.com/jerehme.gayle/" target="_blank">
+            <i class="fa fab fa-instagram"></i>
+          </a>
+
+          <!-- TWITTER -->
+          <a href="https://twitter.com/Jg_Dezigns" target="_blank">
+            <i class="fa fab fa-twitter"></i>
+          </a>
+
+          <!-- PINTREST -->
+          <a href="https://www.pinterest.com/jerehmeg/" target="_blank">
+            <i class="fa fab fa-pinterest-square"></i>
+          </a>
+        </div>
+        <div class="copy"><p>Copyright &copy; JG Dezigns</p></div>
+        <div class="insta">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
+            aperiam aliquid nemo obcaecati qui quas commodi, similique mollitia
+            eaque cupiditate.
+          </p>
         </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- GALLERY -->
-  <section class="gallery" id="gallery">
-    <div class="gal-head">
-      <img src="img/recent-banner.svg" alt="">
-    </div>
+    <!-- JS / Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 
-    <div class="wrapper">
-
-      <div class="item">
-        <div class="polaroid"><img src="img/gal-2.png">
-          <div class="caption">Cupcakes for girl scouts</div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="polaroid"><img src="img/gal-1.png">
-          <div class="caption">Modern / Vintage wedding cake</div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="polaroid"><img src="img/gal-3.png">
-          <div class="caption">Winning cupcake war design</div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="polaroid"><img src="img/gal-4.png">
-          <div class="caption">Double dark chocolate fudge cake</div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="polaroid"><img src="img/gal-5.png">
-          <div class="caption">Ooey Gooey cinamon roll</div>
-        </div>
-      </div>
-
-    </div>
-
-
-  </section>
-
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <!-- BANNER -->
-    <div class="about-banner" data-aos="fade-right" data-aos-duration="1500">
-      <div class="about-banner-wrap">
-        <div class="about-banner-wrap-inner">
-          <img src="img/about-banner1.svg" alt="">
-        </div>
-      </div>
-    </div>
-
-    <!-- ABOUT PARAGRAPH -->
-    <div class="about-p" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
-      <div class="about-p-wrap">
-        <div class="about-p-wrap-inner">
-          <h3>At Mandys</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda repudiandae tenetur facilis nobis
-            saepe nemo id molestiae exercitationem autem, nostrum magni doloremque adipisci deleniti magnam similique a
-            perspiciatis. Nesciunt, maiores.</p>
-        </div>
-
-        <div class="about-p-wrap-pix">
-          <img class="about-p-wrap-pix-img1" src="img/about-pic-2.png" alt="">
-          <img class="about-p-wrap-pix-img2" src="img/about-pic-1.png" alt="">
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <div class="contact-wrap" data-aos="fade-down" data-aos-delay="600" data-aos-duration="1000">
-      <img class="" src="img/contact-pin.svg" alt="">
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-wrap">
-      <div class="social">
-        <h3>Connect with us</h3>
-
-        <!-- INSTAGRAM -->
-        <a href="https://www.instagram.com/jerehme.gayle/" target="_blank">
-          <i class="fa fab fa-instagram"></i>
-        </a>
-
-        <!-- TWITTER -->
-        <a href="https://twitter.com/Jg_Dezigns" target="_blank">
-          <i class="fa fab fa-twitter"></i>
-        </a>
-
-        <!-- PINTREST -->
-        <a href="https://www.pinterest.com/jerehmeg/" target="_blank">
-          <i class="fa fab fa-pinterest-square"></i>
-        </a>
-      </div>
-      <div class="copy">
-        <p>Copyright &copy; JG Dezigns</p>
-      </div>
-      <div class="insta">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam aperiam aliquid nemo obcaecati qui quas
-          commodi, similique mollitia eaque cupiditate.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- JS / Jquery -->
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+  <!-- </html> -->
 </html>

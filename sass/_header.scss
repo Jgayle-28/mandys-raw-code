@@ -26,7 +26,7 @@
 
   .brand {
     padding-top: 2rem;
-    padding-left: 6rem;
+    // padding-left: 6rem;
     padding-right: 6rem;
     float: right;
     -webkit-transition-property: background-color, box-shadow, line-height,
@@ -37,18 +37,21 @@
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.5s;
 
-    @media only screen and (max-width: $bp-lrg) {
-      padding-right: 4rem;
+    @media only screen and (max-width: $bp-med) {
+      padding-right: 0;
     }
 
     a {
-      color: #e33b00;
       text-decoration: none;
     }
   }
 
   .brand-img {
     transition: width 1.5s, height 1.5s;
+
+    @media only screen and (max-width: $bp-sm) {
+      padding-right: 0.5rem;
+    }
   }
 
   ul {
@@ -74,9 +77,6 @@
         padding-right: 0.5rem;
       }
 
-      &:hover a {
-      }
-
       a {
         color: $white;
         text-decoration: none;
@@ -96,6 +96,12 @@
 
   .brand {
     line-height: 60px;
+    margin-right: 7rem;
+    width: 14rem;
+
+    @media only screen and (max-width: $bp-med) {
+      margin-right: 0;
+    }
   }
 
   ul li a {
@@ -108,8 +114,8 @@
 }
 
 .nav.sticky .brand-img {
-  width: 14rem;
-  height: 10.5rem;
+  width: 79rem;
+  height: 6rem;
 }
 
 .menu {
@@ -163,6 +169,7 @@
     opacity: 0.7;
     -webkit-transition: opacity 150ms;
     transition: opacity 150ms;
+
     &:hover {
       opacity: 1;
     }
@@ -230,7 +237,6 @@
   .nav .brand {
     display: block;
     text-align: center;
-    float: none;
   }
   .sticky .brand {
     background-color: $black;
@@ -295,26 +301,39 @@
   transform: scale(1);
 }
 
-// BG IMAGES
+// Bg images / slides
 .slide-1 {
   background-image: linear-gradient(
       rgba(11, 48, 66, 0.5),
       rgba(11, 48, 66, 0.5)
     ),
-    url(../img/slide-1.jpg);
+    url(../img/slides/slide-1.jpg);
   background-size: cover;
   background-position: center center;
   left: 0;
+
+  img {
+  }
 }
 .slide-2 {
   background-image: linear-gradient(
       rgba(11, 48, 66, 0.5),
       rgba(11, 48, 66, 0.5)
     ),
-    url(../img/slide-2.jpg);
+    url(../img/slides/slide-2.jpg);
   background-size: cover;
   background-position: center center;
   left: 100%;
+
+  img {
+    margin-bottom: -2rem;
+
+    @media screen and (max-width: $bp-sm) {
+      width: 30.5rem;
+      height: 17.5rem;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .slide-3 {
@@ -322,7 +341,7 @@
       rgba(11, 48, 66, 0.5),
       rgba(11, 48, 66, 0.5)
     ),
-    url(../img/slide-3.jpg);
+    url(../img/slides/slide-3.jpg);
   background-size: cover;
   background-position: center center;
   left: 200%;
@@ -333,10 +352,18 @@
       rgba(11, 48, 66, 0.5),
       rgba(11, 48, 66, 0.5)
     ),
-    url(../img/slide-4.jpg);
+    url(../img/slides/slide-4.jpg);
   background-size: cover;
   background-position: center center;
   left: 300%;
+
+  img {
+    margin: -2rem;
+
+    @media screen and (max-width: $bp-sm) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .slider-content {
